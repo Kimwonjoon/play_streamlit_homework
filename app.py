@@ -22,14 +22,14 @@ def main():
     if choice == "위치":
        st.header("플레이데이터 서초")
        st.divider()
-       path_to_html = "위치대충.html" 
+       path_to_html = "./data/위치대충.html" 
        with open(path_to_html,'r',encoding='UTF-8') as f:
            html_data = f.read()
        html(html_data, width=1400, height=800)
     elif choice == "커리큘럼":
         st.header("PlayData 커리큘럼")
         st.divider()
-        st.image('커리큘럼.png')
+        st.image('./data/커리큘럼.png')
     else:
         st.header("정리 모음")
         st.divider()
